@@ -29,7 +29,7 @@ def odd_even_game(name):
             print('Correct!')
         else:
             return f"{user_answer} is wrong answer ;(. Correct answer was \
-{right_answer}.\nLet's try again, Bill!"
+{right_answer}.\nLet's try again, {name}!"
     return f'Congratulations, {name}!'
 
 

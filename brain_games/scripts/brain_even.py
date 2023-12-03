@@ -28,8 +28,8 @@ def odd_even_game(name):
         if user_answer == right_answer:
             print('Correct!')
         else:
-            return f"{user_answer} is wrong answer ;(. Correct answer was\
-             {right_answer}./nLet's try again, Bill!"
+            return f"{user_answer} is wrong answer ;(. Correct answer was \
+{right_answer}.\nLet's try again, Bill!"
     return f'Congratulations, {name}!'
 
 

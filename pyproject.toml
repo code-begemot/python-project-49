@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["code-begemot <code.begemode@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/code-begemot/python-project-49"
 packages = [
   { include = "brain_games" },
 ]

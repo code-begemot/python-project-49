@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "mini games for BIG MINDS"
 authors = ["code-begemot <code.begemode@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/code-begemot/python-project-49"

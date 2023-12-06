@@ -1,5 +1,5 @@
 from brain_games.scripts.game_logic import game, greet, welcome_user
-import math, random
+import random
 
 
 def gcd(my_list):
@@ -11,18 +11,19 @@ def gcd(my_list):
         else:
             b = b % a
     return a + b
-    
 
-def main():  
+
+def main():
     greet()
     name = welcome_user()
-    print('Find the greatest common divisor of given numbers.')        
+    print('Find the greatest common divisor of given numbers.')
     questions = []
     answers = []
     for i in range(3):
         questions.append(f'{random.randint(1, 100)} {random.randint(1, 100)}')
         answers.append(str(gcd(questions[i].split())))
     game(name, questions, answers)
-		               
+
+
 if __name__ == "__main__":
     main()

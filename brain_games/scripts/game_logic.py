@@ -1,4 +1,3 @@
-import random
 import prompt
 
 
@@ -19,9 +18,8 @@ def game(name, questions, answers):
         if user_answer == answers[i]:
             print('Correct!')
         else:
-            print(f"{user_answer} is wrong answer ;(. Correct answer was {answers[i]}.\nLet's try again, {name}!")
+            print(f"{user_answer} is wrong answer ;(. Correct answer was\
+             {answers[i]}.\nLet's try again, {name}!")
             return 0
     print(f'Congratulations, {name}!')
     return 1
-    
-

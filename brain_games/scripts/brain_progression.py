@@ -1,6 +1,7 @@
 from brain_games.scripts.game_logic import game, greet, welcome_user
 import random
 
+
 def arith_progression(n):
     a0 = random.randint(1, 100)
     d = random.randint(1, 100)
@@ -10,11 +11,12 @@ def arith_progression(n):
         a.append(str(int(a[i - 1]) + d))
     return a
 
-def main():  
+
+def main():
     n = 10
     greet()
     name = welcome_user()
-    print('What number is missing in the progression?')        
+    print('What number is missing in the progression?')
     questions = []
     answers = []
     temp_list = []
@@ -25,6 +27,7 @@ def main():
         temp_list[hide_k] = ".."
         questions.append(' '.join(temp_list))
     game(name, questions, answers)
-		               
+
+
 if __name__ == "__main__":
     main()

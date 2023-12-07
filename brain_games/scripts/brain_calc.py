@@ -1,18 +1,9 @@
-from brain_games.scripts.game_logic import game, greet, welcome_user
-import random
+from brain_games.game_logic import game_logic
+import brain_games.games.calc
 
 
 def main():
-    greet()
-    name = welcome_user()
-    print('What is the result of the expression?')
-    questions = []
-    answers = []
-    for i in range(3):
-        questions.append(f'{random.randint(1, 100)}\
-        {random.choice(["+", "-", "*"])} {random.randint(1, 100)}')
-        answers.append(str(eval(questions[i])))
-    game(name, questions, answers)
+    game_logic(brain_games.games.calc)
 
 
 if __name__ == "__main__":

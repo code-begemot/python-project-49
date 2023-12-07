@@ -25,7 +25,7 @@ def game_logic(module):
             print('Correct!')
             count += 1
         else:
-            print(f"{user_answer} is wrong answer ;(. Correct answer was\
+            print(f"{user_answer} is wrong answer ;(.Correct answer was\
  {answer}.\nLet's try again, {name}!")
             return 0
     print(f'Congratulations, {name}!')

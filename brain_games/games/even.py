@@ -17,5 +17,5 @@ def generate_round():
     if odd_even_check(num):
         answer = 'yes'
     else:
-    	answer = 'no'
+        answer = 'no'
     return question, answer

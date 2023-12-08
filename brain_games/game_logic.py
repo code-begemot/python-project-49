@@ -1,10 +1,6 @@
 import prompt
 
 
-def greet():
-    print('Welcome to the Brain Games!')
-
-
 def welcome_user():
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -12,11 +8,10 @@ def welcome_user():
 
 
 def game_logic(module):
-    greet()
+    print('Welcome to the Brain Games!')
     name = welcome_user()
     count = 0
-    desc = module.DESCRIPTION
-    print(desc)
+    print(module.DESCRIPTION)
     while count < 3:
         question, answer = module.generate_round()
         print(f'Question: {question}')
